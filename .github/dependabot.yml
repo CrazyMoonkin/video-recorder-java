@@ -1,0 +1,35 @@
+version: 2
+updates:
+- package-ecosystem: gradle
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.codeborne:selenide
+    versions:
+    - 5.18.0
+    - 5.18.1
+    - 5.19.0
+    - 5.20.0
+    - 5.20.1
+    - 5.20.2
+    - 5.20.3
+  - dependency-name: io.github.bonigarcia:webdrivermanager
+    versions:
+    - 4.3.1
+    - 4.4.0
+  - dependency-name: com.google.inject:guice
+    versions:
+    - 4.2.3
+    - 5.0.0
+  - dependency-name: org.junit.jupiter:junit-jupiter-api
+    versions:
+    - 5.7.0
+    - 5.7.1
+  - dependency-name: org.json:json
+    versions:
+    - "20201115"
+  - dependency-name: org.apache.commons:commons-lang3
+    versions:
+    - "3.11"
